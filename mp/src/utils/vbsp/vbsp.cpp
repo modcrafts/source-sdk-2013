@@ -1126,6 +1126,7 @@ int RunVBSP( int argc, char **argv )
 		}
 		else if ( !Q_stricmp( argv[i], "-allowdynamicpropsasstatic"))
 		{
+			Msg("allowdynamicpropsasstatic = true\n");
 			g_bAllowDynamicPropsAsStatic = true;
 		}
 		else if ( !Q_stricmp( argv[i], "-novirtualmesh"))
