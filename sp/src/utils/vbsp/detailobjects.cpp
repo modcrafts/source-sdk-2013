@@ -564,7 +564,7 @@ static void AddDetailSpriteToLump( const Vector &vecOrigin, const QAngle &vecAng
 
 	if (i >= MAX_MAP_DETAILPROPS)
 	{
-		Error( "Error! Too many detail props emitted on this map! (64K max!)n" );
+		Error( "Error! Too many detail props emitted on this map! (%d max!)\n", MAX_MAP_DETAILPROPS );
 	}
 
 	DetailObjectLump_t& objectLump = s_DetailObjectLump[i];
