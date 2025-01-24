@@ -3292,7 +3292,7 @@ void CalcFaceExtents(dface_t *s, int lightmapTextureMinsInLuxels[2], int lightma
 
 		lightmapTextureMinsInLuxels[i] = ( int )mins[i];
 		lightmapTextureSizeInLuxels[i] = ( int )( maxs[i] - mins[i] );
-		if( lightmapTextureSizeInLuxels[i] > nMaxLightmapDim + 1 )
+		if( false )// ( lightmapTextureSizeInLuxels[i] > nMaxLightmapDim + 1 )
 		{
 			Vector point = vec3_origin;
 			for (int j=0 ; j<s->numedges ; j++)
